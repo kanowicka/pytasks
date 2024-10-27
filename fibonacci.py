@@ -1,14 +1,15 @@
 def fibonacci_sequence(n: int) -> list[int]:
-    if n <= 0:
+    if n == 0:
+        return []
+    if n == 1:
         return [0]
 
-    ser1 = [1,1,2]
+    sequence = [0,1]
 
-    while len(ser1) <= n:
-        ser2 = ser1[len(ser1) - 1] + ser1[len(ser1) - 2]
-        ser1.append(ser2)
+    while len(sequence) < n:
+        sequence.append(sequence[-1] + sequence[-2])
 
-    return ser1
+    return sequence
 
 if __name__ == "__main__":
 
