@@ -11,7 +11,11 @@ def fibonacci_sequence(n: int) -> list[int]:
 
     return sequence
 
+def fibonacci_element(n :int) -> int:
+    return fibonacci_sequence(n+1)[n]
+
 if __name__ == "__main__":
 
     x = int(input("Fibonacci number:"))
-    print(fibonacci_sequence(x))
+    print(f"Sequence: {fibonacci_sequence(x)}")
+    print(f"Element: {fibonacci_element(x)}")
