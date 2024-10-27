@@ -12,5 +12,5 @@ def fibonacci_sequence(n: int) -> list[int]:
 
 if __name__ == "__main__":
 
-    print("Fibonacci number:")
-    print(fibonacci_sequence(20))
+    x = int(input("Fibonacci number:"))
+    print(fibonacci_sequence(x))
