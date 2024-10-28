@@ -1,4 +1,7 @@
 def fibonacci_sequence(n: int) -> list[int]:
+    if n < 0:
+        raise Exception('Sequence index must be positive number!')
+
     if n == 0:
         return []
     if n == 1:
@@ -16,6 +19,10 @@ def fibonacci_element(n :int) -> int:
 
 if __name__ == "__main__":
 
-    x = int(input("Fibonacci number:"))
-    print(f"Sequence: {fibonacci_sequence(x)}")
-    print(f"Element: {fibonacci_element(x)}")
+    try:
+        x = int(input("Fibonacci number: "))
+        print(f"Sequence: {fibonacci_sequence(x)}")
+        print(f"Element: {fibonacci_element(x)}")
+    except Exception as err:
+        print("Error occurred while running program!")
+        print(err)
