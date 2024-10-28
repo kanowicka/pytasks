@@ -20,4 +20,5 @@ disable=raw-checker-failed,
         C0115,
         C0116,
         W0703,
-        C0103
+        C0103,
+        W0719
