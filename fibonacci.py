@@ -19,10 +19,15 @@ def fibonacci_element(n :int) -> int:
 
 if __name__ == "__main__":
 
-    try:
-        x = int(input("Fibonacci number: "))
-        print(f"Sequence: {fibonacci_sequence(x)}")
-        print(f"Element: {fibonacci_element(x)}")
-    except Exception as err:
-        print("Error occurred while running program!")
-        print(err)
+    while True:
+        try:
+            x = int(input("Fibonacci number: "))
+            print(f"Sequence: {fibonacci_sequence(x)}")
+            print(f"Element: {fibonacci_element(x)}")
+            break
+        except ValueError as err:
+            print("Invalid type, pleas provide integer")
+        except Exception as err:
+            print("Error occurred while running program!")
+            print(err)
+
