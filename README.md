@@ -41,6 +41,12 @@ Deactivate
 deactivate
 ```
 
+## Test
+
+```shell
+pytest
+```
+
 ## Security
 
 If you discover any security-related issues, please email [email](mailto:email) instead of using the issue tracker.
